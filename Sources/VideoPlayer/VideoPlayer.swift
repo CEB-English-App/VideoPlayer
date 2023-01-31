@@ -197,7 +197,7 @@ extension VideoPlayer: UIViewRepresentable {
             context.coordinator.observingURL = url
         }
         
-        //play ? uiView.play(for: url) : uiView.pause(reason: .userInteraction)
+        play ? uiView.play(for: url) : uiView.pause(reason: .userInteraction)
         uiView.isMuted = config.mute
         uiView.isAutoReplay = config.autoReplay
         
