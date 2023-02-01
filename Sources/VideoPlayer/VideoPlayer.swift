@@ -44,6 +44,12 @@ public struct VideoPlayer {
         self.url = url
         _play = play
         _time = time
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback)
+        } catch(let error) {
+            print(error.localizedDescription)
+        }
     }
 }
 
