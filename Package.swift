@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/wxxsw/GSPlayer.git", from: "0.2.25"),
+        .package(url: "https://github.com/cesurbagci/GSPlayer.git", branch: "master"),
     ],
     targets: [
         .target(
